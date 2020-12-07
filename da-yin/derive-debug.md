@@ -1,8 +1,6 @@
----
-description: 为结构体或枚举添加此注解，以便打印内容
----
-
 # \#\[derive\(Debug\)\]
+
+在结构体或枚举上增加 `#[derive(Debug)]` 注解，可以在 `println!` 中打印结构体或枚举的内容：
 
 ```rust
 use crate::List::{Cons, Nil};
