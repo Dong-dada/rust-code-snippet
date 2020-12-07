@@ -10,3 +10,7 @@
 
 * [结构体](mian-xiang-dui-xiang/jie-gou-ti.md)
 
+## 智能指针
+
+* [Drop Trait](zhi-neng-zhi-zhen/drop-trait.md)
+
