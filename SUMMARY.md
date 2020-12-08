@@ -13,4 +13,5 @@
 ## 智能指针
 
 * [Drop Trait](zhi-neng-zhi-zhen/drop-trait.md)
+* [Rc&lt;T&gt;](zhi-neng-zhi-zhen/rc-less-than-t-greater-than.md)
 
