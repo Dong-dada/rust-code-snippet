@@ -9,7 +9,7 @@
 ## 面向对象
 
 * [结构体 - 基本](mian-xiang-dui-xiang/jie-gou-ti.md)
-* [控制成员的可见性](mian-xiang-dui-xiang/kong-zhi-cheng-yuan-de-ke-jian-xing.md)
+* [封装](mian-xiang-dui-xiang/kong-zhi-cheng-yuan-de-ke-jian-xing.md)
 
 ## 智能指针
 
