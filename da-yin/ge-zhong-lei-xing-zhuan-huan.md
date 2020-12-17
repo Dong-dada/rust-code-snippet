@@ -74,6 +74,7 @@ fn main() {
     let number_vec: Vec<u8> = vec![1, 2, 3, 4, 5, 6, 7, 8, 9];
     let number_set: HashSet<u8> = number_vec.into_iter().collect();
     println!("{:?}", number_set);
+    // println!("{:?}", number_vec);
 
     // 使用 Vec 来初始化 HashSet
     // 初始化完成后，原先的数组还能使用，因为进行了 clone
