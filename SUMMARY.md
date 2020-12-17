@@ -2,9 +2,10 @@
 
 * [Rust 代码收藏](README.md)
 
-## 打印
+## 基础 <a id="da-yin"></a>
 
 * [\#\[derive\(Debug\)\]](da-yin/derive-debug.md)
+* [各种类型转换](da-yin/ge-zhong-lei-xing-zhuan-huan.md)
 
 ## 面向对象
 
