@@ -6,6 +6,7 @@
 
 * [\#\[derive\(Debug\)\]](da-yin/derive-debug.md)
 * [各种类型转换](da-yin/ge-zhong-lei-xing-zhuan-huan.md)
+* [各种初始化](da-yin/ge-zhong-chu-shi-hua.md)
 
 ## 面向对象
 
