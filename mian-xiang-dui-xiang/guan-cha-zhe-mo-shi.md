@@ -59,6 +59,7 @@ impl Counter {
         }
     }
 
+    // 私有函数，用来触发事件
     fn fire_event(&mut self, event: &CounterEvent) {
         self.observers.retain(|observer| {
             // 先尝试将 Weak<RefCell<T>> 提权为 Rc<RefCell<T>>
