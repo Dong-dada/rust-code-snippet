@@ -13,6 +13,7 @@
 * [结构体 - 基本](mian-xiang-dui-xiang/jie-gou-ti.md)
 * [封装](mian-xiang-dui-xiang/kong-zhi-cheng-yuan-de-ke-jian-xing.md)
 * [多态](mian-xiang-dui-xiang/duo-tai.md)
+* [观察者模式](mian-xiang-dui-xiang/guan-cha-zhe-mo-shi.md)
 
 ## 智能指针
 
