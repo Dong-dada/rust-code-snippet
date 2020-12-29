@@ -43,6 +43,19 @@ impl Counter {
         self.observers.push(observer);
     }
 
+    // 移除观察者
+    pub fn remove_observer(&mut self, observer: Rc<RefCell<dyn CounterEventObserver>>) {
+        self.observers.retain(|existed_observer| {
+            if let Some(existed_observer) = existed_observer.upgrade() {
+                return !Rc::ptr_eq(&existed_observer, &observer);
+            } else {
+                return false;
+            }
+
+            return true;
+        });
+    }
+
     // 增加计数器，随着计数的增加，将触发事件通知给观察者
     pub fn plus_one(&mut self) {
         if self.current_count == self.target_count {
@@ -88,6 +101,27 @@ mod tests {
             println!("receive event: {:?}", event);
             self.current_event = *event;
         }
+    }
+
+    #[test]
+    fn add_observer() {
+        let mut counter = Counter::new(12);
+        let observer = MockObserver{ current_event: CounterEvent::Start };
+        let observer = Rc::new(RefCell::new(observer));
+        counter.add_observer(observer.clone());
+        assert_eq!(1, counter.observers.len());
+    }
+
+    #[test]
+    fn remove_observer() {
+        let mut counter = Counter::new(12);
+        let observer = MockObserver{ current_event: CounterEvent::Start };
+        let observer = Rc::new(RefCell::new(observer));
+        counter.add_observer(observer.clone());
+        assert_eq!(1, counter.observers.len());
+
+        counter.remove_observer(observer.clone());
+        assert_eq!(0, counter.observers.len());
     }
 
     #[test]
