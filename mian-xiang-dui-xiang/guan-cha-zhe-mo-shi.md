@@ -51,8 +51,6 @@ impl Counter {
             } else {
                 return false;
             }
-
-            return true;
         });
     }
 
